@@ -1,0 +1,57 @@
+.navbar {
+
+    overflow: hidden;
+  
+    background-color: rgb(46, 130, 187);
+  
+    position: fixed;
+  
+    top: 0;
+  
+    width: 100%;
+  
+  }
+  
+   
+  
+  .navbar a {
+  
+    float: right;
+  
+    display: block;
+  
+    color: #ffffff;
+  
+    text-align: center;
+  
+    padding: 14px 16px;
+  
+    text-decoration: none;
+  
+    font-size: 17px;
+  
+  }
+
+  .navbar > .test { float: left;}
+   
+  
+  .navbar a:hover {
+  
+    background: rgb(196, 194, 194);
+  
+    color: black;
+  
+  }
+  
+   
+  
+  .main {
+    color: #000000;
+  
+    padding: 16px;
+  
+    margin-top: 30px;
+  
+    height: 1500px; /* Used in this example to enable scrolling */
+  
+  }
