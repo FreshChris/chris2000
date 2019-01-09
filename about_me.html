@@ -1,44 +1,90 @@
-<!doctype html>
+﻿<!doctype html>
  <html>
      <title> My Blog  </title>
   <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta charset="utf-8">
 
-   <link rel="stylesheet" type="text/css" href="G:\Courses 360GSP\My Webpage\center_style_welcome.css">
-<link rel="stylesheet" type="text/css" href="G:\Courses 360GSP\My Webpage\stylemenu.css">
-<link rel="stylesheet" type="text/css" href="G:\Courses 360GSP\My Webpage\blog_pics.css">
-<link rel="stylesheet" type="text/css" href="G:\Courses 360GSP\My Webpage\images_zoom.css">
-<link rel="stylesheet" type="text/css" href="G:\Courses 360GSP\My Webpage\blog_buttons.css">
-<link rel="stylesheet" type="text/css" href="G:\Courses 360GSP\My Webpage\navbar.css">
+   <link rel="stylesheet" type="text/css" href="C:\MyWebSite\center_style_welcome.css">
+<link rel="stylesheet" type="text/css" href="C:\MyWebSite\stylemenu.css">
+<link rel="stylesheet" type="text/css" href="C:\MyWebSite\blog_pics.css">
+<link rel="stylesheet" type="text/css" href="C:\MyWebSite\images_zoom.css">
+<link rel="stylesheet" type="text/css" href="C:\MyWebSite\blog_buttons.css">
+<link rel="stylesheet" type="text/css" href="C:\MyWebSite\navbar.css">
+<link rel="stylesheet" type="text/css" href="C:\MyWebSite\aboutme.css">
+      <script src="C:\MyWebSite\aboutmetext.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Mali|Yanone+Kaffeesatz" rel="stylesheet">
+
+
 </head>
-<header>
-<div class="header"> 
-   </div>
-       <div class="navbar"> 
-            <div class="test"> <a href="mywebpage.html" > &copy; Chris Blog </a></div>
-            <a href="contact_me.html" > Contact </a> 
-            <a href="about_me.html"> About Me </a> 
-            <a href="mywebpage2.html"> Blog </a> 
-            <a href="mywebpage.html"> Home </a> 
-       </div>
+ <header>
+     <div class="header">
 
-<hr/>
-<h1 id="welcome" > About Me </h1>
+         <div class="navbar">
+             <div class="navleft"> <a href="mywebpage.html"> &copy; Chris Blog </a></div>
+             <a href="contact_me.html"> Contact </a>
+             <a href="about_me.html"> About Me </a>
+             <a href="mywebpage2.html"> Blog </a>
+             <a href="mywebpage.html"> Home </a>
+         </div>
+     </div>
+
+     <hr />
+     <h1 id="welcome"> About Me </h1>
+ </header>
+ <div class="main">
+
+     <body>
+         <h1 style="text-decoration: none; background-color: azure; opacity: 0.7; text-align: center">  Hello, my name is Chris, I'm learning programming, and I am working as Chef De Partie  </h1>
+   
+         
+         <div class="blog_style">
+
+             <img id="myImg" src="C:\MyWebSite\pictures\me.jpg" alt="My Avatar" style="width:100%;max-width:300px">
+
+             <!-- The Modal -->
+             <div id="myModal" class="modal">
+                 <span class="close">&times;</span>
+                 <img class="modal-content" id="img01">
+                 <div id="caption"></div>
+             </div>
+             <script src="C:\MyWebSite\images_zoom1.js"></script>
 
 
-<body>
+             <p> I was born in 1992, date of birth 15 February, in Moldova </p>
+        
+                 
+
+                 <button onclick="myFunction()">Click for more details</button>
+
+                 <div id="description">
+                     <p> As I said I am from Moldova, Chisinau. Since 2 years I moved to United Kingdom, London, to find my target as a programist. </p>
+                     <p> I started as other people, to work in <i> Customer Service Environment </i>.  </p>
+                     <p> I work at the moment as <strong> Chef De Partie</strong> in one of the famous places <i>"Harvey Nichols"</i> at Burger and Lobster Restaurant. </p>
+                     <p> Recognised as the UK's premier luxury fashion retailer, Harvey Nichols is internationally renowned for its expertly edited fashion and beauty merchandise, premium food and wine offer and award-winning restaurants.</p>
+                     <p> I started as well a course for about a year, <strong> Junior Developer</strong>.</p>
+                     <p> I start to learning the <strong> Fundamentals of HTML5 </strong> development, Programming in <strong> HTML5 with CSS3 and JavaScript </strong>, <strong> Android </strong> Applications and Programming in <strong> C# </strong>. </p>
+                     <p> If you would like more information about where I studied and where I have been working in the past, you can click on the link bellow to check my Curriculum Vitae. </p>
+                     <p> <a href="C:\MyWebSite\curriculumvitae.html" target="_blank"> Curriculum Vitae </a> </p>
+                 </div>
+             </br>
+             <img style="display:none; width:800px; height:auto;" id="fordfocus" src="fordfocus" />
+             <button onclick="showPicture()">Enlarge</button>
+             <button onclick="hidePicture()">Hide</button>
 
 
+             Display logo</button>
+             </div>
+         </div>
 </body>
 <div class="footer">
         <center>
         <footer>
-           <p> Copyright &copy 2018 All rights reserved  </p>
-           <p> Terms and Conditions</p>
-           <p> Webpage Design: Chris Blog Ltd.</p>
+            <p> All rights reserved  </p>
+            <p> <a href="C:\MyWebSite\user_agreement.html" target="_blank"> User Agreement </a> </p>
+            <p> &copy 2019 Chris Blog Ltd. </p>
         </footer>
         </center>
    </div>
+</div>
 </html>
