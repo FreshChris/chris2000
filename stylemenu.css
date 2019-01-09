@@ -9,18 +9,18 @@
     opacity: 1;
     background-color: azure;
  }
- header {
-        background-image: url('file:///G:/Courses 360GSP/My Webpage/pictures/green-nature-wallpapers.jpeg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width:100%;
-        height: auto;
-        top:0px;
-        left:0px;
-        color: azure;
-        z-index:7;
-        font-family:verdana;
+header {
+    background-image: url('file:///C:/MyWebSite/pictures/background-gold.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    color: azure;
+    z-index: 7;
+    font-family: verdana;
 } 
     html { 
             background: url('https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&h=650&w=940') no-repeat center center fixed; 
@@ -29,17 +29,27 @@
             -o-background-size: cover;
             background-size: cover;
           }
-.footer{
-        position:absolute;
-        width:100%;
-        height:80px;
-        background: url('file:///C:/Users/Asus/Downloads/abstract-background-carpentry-268976.jpg') no-repeat center center fixed;
-        top: auto;
-        right:0px;
-        color:white;
-        z-index:20;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-         
-     }
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: url('file:///C:/MyWebSite/abstract-background-carpentry-268976.jpg') no-repeat center center fixed;
+    top: auto;
+    right: 0px;
+    color: white;
+    z-index: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* This is for link colors universal */
+a:link, a:visited {
+    color: #ffd300;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+    a:link:active, a:visited:active {
+        color: #808080;
+    }
 
     
