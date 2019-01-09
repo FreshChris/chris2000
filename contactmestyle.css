@@ -1,0 +1,17 @@
+﻿.field_set {
+    border-color: gold ;
+    background-color:;
+    
+}
+label {
+    text-decoration: none;
+    color: #696969;
+    background-color:rgb(165, 174, 86,0.8);
+}
+legend {
+    color: #ffffff;
+    background-color: rgb(165, 174, 86,0.8);
+}
+textarea {
+
+}
