@@ -1,38 +1,124 @@
+
+/* This is for the first picture of the girls with glasses from Blog Section */
+.container {
+    position: relative;
+    width: 489px;
+    height: 639px;
+    overflow: hidden;
+    float: left;
+}
+
+.item  {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+    .item #img1 {
+        -webkit-transition: 0.6s ease;
+        transition: 0.6s ease;
+    }
+
+.container:hover .item #img1 {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/* Zooming the second image Microsoft Surface Studio 2 from Blog Section */
+.container2 {
+    position: relative;
+    width: 689px;
+    height: 400px;
+    overflow: hidden;
+    float: left;
+}
+
+.item2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+    .item2 #img2 {
+        -webkit-transition: 0.6s ease;
+        transition: 0.6s ease;
+    }
+
+.container2:hover .item2 #img2 {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* Zooming the thrid image Cyber Image System Hacked from Blog Section */
+.container3 {
+    position: relative;
+    width: 489px;
+    height: 280px;
+    overflow: hidden;
+    float: left;
+}
+
+.item3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+    .item3 #img3 {
+        -webkit-transition: 0.6s ease;
+        transition: 0.6s ease;
+    }
+
+.container3:hover .item3 #img3 {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/* Zooming the 4-th image Computer Image  from Blog Section */
+.container4 {
+    position: relative;
+    width: 389px;
+    height: 482px;
+    overflow: hidden;
+}
+
+.item4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+    .item4 #img4 {
+        -webkit-transition: 0.6s ease;
+        transition: 0.6s ease;
+    }
+
+.container4:hover .item4 #img4 {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+
+
+                         /* This is for the main picture in the About Me Section */
 #myImg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-#mybrave {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#myImg2 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border-radius: 5px;
-}
-#mybrave:hover {opacity: 0.7;}
-
-#myImg:hover {opacity: 0.7;}
+    #myImg:hover {
+        opacity: 0.7;
+    }
 
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 10; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -64,7 +150,7 @@
 }
 
 /* Add Animation */
-.modal-content, #caption {    
+.modal-content, #caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -72,19 +158,29 @@
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
 }
 
 @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
 
 /* The Close Button */
 .close {
     position: absolute;
-    top: 15px;
+    top: 40px;
     right: 35px;
     color: #f1f1f1;
     font-size: 40px;
@@ -92,15 +188,15 @@
     transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
     .modal-content {
         width: 100%;
     }
