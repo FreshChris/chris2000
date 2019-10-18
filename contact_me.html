@@ -5,18 +5,21 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta charset="utf-8">
 
-   <link rel="stylesheet" type="text/css" href="G:\Courses 360GSP\My Webpage\center_style_welcome.css">
-<link rel="stylesheet" type="text/css" href="G:\Courses 360GSP\My Webpage\stylemenu.css">
-<link rel="stylesheet" type="text/css" href="G:\Courses 360GSP\My Webpage\blog_pics.css">
-<link rel="stylesheet" type="text/css" href="G:\Courses 360GSP\My Webpage\images_zoom.css">
-<link rel="stylesheet" type="text/css" href="G:\Courses 360GSP\My Webpage\blog_buttons.css">
-<link rel="stylesheet" type="text/css" href="G:\Courses 360GSP\My Webpage\navbar.css">
+   <link rel="stylesheet" type="text/css" href="center_style_welcome.css">
+<link rel="stylesheet" type="text/css" href="stylemenu.css">
+<link rel="stylesheet" type="text/css" href="blog_pics.css">
+<link rel="stylesheet" type="text/css" href="images_zoom.css">
+<link rel="stylesheet" type="text/css" href="blog_buttons.css">
+<link rel="stylesheet" type="text/css" href="navbar.css">
+<link rel="stylesheet" type="text/css" href="contactmestyle.css">
+<script src="invalidmailmsg.js"> </script> 
+
 <link href="https://fonts.googleapis.com/css?family=Mali|Yanone+Kaffeesatz" rel="stylesheet">
 </head>
 <header>
 <div class="header"> 
       <div class="navbar"> 
-         <div class="test"> <a href="mywebpage.html" > &copy; Chris Blog </a></div>
+         <div class="navleft"> <a href="mywebpage.html" > &copy; Chris Blog </a></div>
          <a href="contact_me.html" > Contact </a> 
          <a href="about_me.html"> About Me </a> 
          <a href="mywebpage2.html"> Blog </a> 
@@ -29,57 +32,61 @@
 
 
 <body>
-   <form name="get info" method="post" action="support.aspx">
-   <fieldset>
-   <legend> You can introduce yourself and send me a message </legend>
-   <ol>
-   <li>
-   <label>
-   <strong> Name </strong> <br/>
-   <input type="text" name="User Name" value="Your name" autofocus />
-   </label>
-   </li>
+    
+        <form name="get info" method="post" action="support.aspx">
+            <fieldset class="field_set">
+                <legend> You can introduce yourself and send me a message </legend>
+                <ol>
+                    <li>
+                        <label>
+                            <strong> Name </strong> <br />
+                            <input type="text" name="User Name" placeholder="Your name" oninvalid="InvalidNameMsg(this);" oninput="InvalidNameMsg(this);" required autofocus />
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <strong> Telephone </strong> <br />
+                            <input type="text" name="Phone" placeholder="Your phone number" oninvalid="InvalidPhoneMsg(this);" oninput="InvalidPhoneMsg(this);" pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" required />
+                        </label>
+                    </li>
+                    <li>
+                        </label>
+                        <strong> Post Code <br /> </strong>
+                        <input type="text" name="Code" placeholder="Enter your post code" oninvalid="InvalidPostCodeMsg(this);" oninput="InvalidPostCodeMsg(this);" pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]? [0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}" required />
+                        <! above line only allowes post codes from UK residents only>
+                        </label>
 
-   <li>
-   <label>
-   <strong> Telephone </strong> <br/>
-   <input type="text" name="Phone" value="Your phone number" required/>
-   </label>
-   </li>
+                    <li>
+                        <label>
+                            <strong> Email ID </strong> <br />
+                            <input type="email" placeholder="Your email address" required />
+                        </label>
+                    </li>
 
-   <li>
-   </label>
-   <strong> Post Code (Alphabets only) <br /> </strong>
-   <input type="text" name="Code" value="Enter 6 characters" pattern="[A-Z,a-z] {6}" />
-   <! above line only allowes alphabets in upper/lowercase and max 6>
-   </label>
 
-   <li>
-   <label>
-   <strong> Email ID </strong> <br/>
-   <input type="url" name="Email" value="Your email address" />
-   </label>
-   </li>
+                    <li>
+                        <label>
+                            <strong> Message </strong> <br />
+                            <textarea name="Message" cols="30" rows="10" placeholder="Add your message here"> </textarea>
+                        </label>
+                    </li>
 
-   <li>
-   <label>
-   <strong> Message </strong> <br/>
-   <textarea name="Message" cols="30" rows="10"> Add your message here </textarea>
-   </label>
-   </li>
-   <input id="form_buy" type="submit" value="Send" />
 
-   </fieldset>
 
-   </form>
+
+
+
+                    <input id="form_buy" type="submit" value="Send" />
+            </fieldset>
+        </form>
 
    </body>
     <div class="footer">
             <center>
             <footer>
-               <p> Copyright &copy 2018 All rights reserved  </p>
-               <p> Terms and Conditions</p>
-               <p> Webpage Design: Chris Blog Ltd.</p>
+               <p> All rights reserved  </p>
+               <p> <a href="user_agreement.html" target="_blank"> User Agreement </a> </p>
+               <p> &copy 2019 Chris Blog Ltd. </p>
             </footer>
             </center>
        </div>
